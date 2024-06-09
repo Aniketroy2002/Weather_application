@@ -13,7 +13,7 @@ async function weather(){
     const deg=document.getElementById('deg')
     const factor=document.getElementById('factor')
     const url='https://api.openweathermap.org/data/2.5/weather?q='
-    const api='4170a4c43a12394fd58f981ca8e0107c&units=metric';
+    const api='Your_Api_key';
     const data=await fetch(url+search+ `&appid=${api}`);
     if(data.status==404){
         alert("Invalid city name");
